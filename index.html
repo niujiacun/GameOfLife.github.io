@@ -7,15 +7,15 @@
     #canvas {
         width: 100%;
         height: 100%;
-        background-color: gray;
+        background-color: #C8C8C8;
         margin: 0;
     }
     .live {
-        background-color: green;
+        background-color: #00CC33;
         margin: 0;
     }
     .death {
-        background-color: gray;
+        background-color: #C8C8C8;
         margin: 0;
     }
     body {
@@ -40,7 +40,7 @@
 
 <script>
     rows = 50;
-    cols = 20;
+    cols = 23;
     
     function init_grid()
     {
@@ -69,7 +69,7 @@
             tr.attr("id", "tr" + i);
             for(j=0; j<cols; j++)
             {
-                var td = $("<td><td>");
+                var td = $("<td></td>");
                 td.attr("id", "td" + i + "-" + j);
                 tr.append(td);
             }
